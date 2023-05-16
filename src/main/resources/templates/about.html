@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+  <head>
+    <meta charset="UTF-8" />
+    <title>About Us</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Advert System Management</h1>
+      <nav>
+        <ul>
+          <li><a th:href="@{/index}">Home</a></li>
+          <li><a th:href="@{/about}">About us</a></li>
+          <li><a th:href="@{/}">Login</a></li>
+          <li><a th:href="@{/signup}">Sign up</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="banner banner-about">
+      <h2 class="banner-title">About us</h2>
+    </div>
+
+    <main class="main-wrapper">
+      <div class="about">
+        <p class="about-intro">
+          Welcome to Ad Management System! We are a leading provider of
+          advertising management solutions for businesses of all sizes. Our
+          platform offers a comprehensive suite of tools and services designed
+          to help you maximize the effectiveness of your advertising campaigns,
+          and achieve your business objectives.
+        </p>
+
+        <h3 class="about-subtitle">Our History</h3>
+        <p>
+          Ad Management System was founded in 2010 by a team of experienced
+          advertising professionals who recognized the need for a more
+          comprehensive and effective way to manage and optimize advertising
+          campaigns. Since then, we have helped thousands of businesses across a
+          wide range of industries achieve their marketing goals, and continue
+          to innovate and improve our platform to meet the evolving needs of our
+          customers.
+        </p>
+
+        <h3 class="about-subtitle">Our Team</h3>
+        <p>
+          At Ad Management System, we are proud to have a team of talented and
+          dedicated professionals who are passionate about delivering
+          exceptional service and results for our customers. Our team includes
+          experts in advertising, data analysis, software development, and
+          customer support, all working together to help our customers succeed.
+        </p>
+
+        <h3 class="about-subtitle">Our Mission</h3>
+        <p>
+          Our mission is to provide the most effective and efficient advertising
+          management platform for businesses of all sizes. We are committed to
+          delivering exceptional service, support, and results, and strive to
+          build long-term relationships with our customers based on trust,
+          transparency, and mutual success.
+        </p>
+      </div>
+
+      <div class="contact">
+        <h3 class="contact-title">Reach Us</h3>
+        <p>
+          If you have any questions or comments, please feel free to contact us
+          at any time. We are always happy to hear from our customers and will
+          do our best to respond promptly.
+        </p>
+        <p class="contact-item">
+          Email:
+          <a href="mailto:" class="contact-link">cbyiringiro980@gmail.com</a>
+        </p>
+        <p class="contact-item">
+          Phone: <a href="tel:" class="contact-link">+250 000 000 000</a>
+        </p>
+      </div>
+    </main>
+  </body>
+</html>

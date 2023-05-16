@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>dashboard</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>Advert System Management</h1>
+      <nav>
+        <ul>
+          <li><a th:href="@{/dashboard}">Dashboard</a></li>
+          <li><a th:href="@{/advert/new}">Add Advert</a></li>
+          <li><a th:href="@{/}">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container">
+      <!-- Other content of your dashboard page -->
+      <h2 class="advert-list--title">Advert list</h2>
+      <table class="advert-table">
+        <tr>
+          <th>Id</th>
+          <th>Title</th>
+          <th>Description</th>
+          <th>Action</th>
+        </tr>
+        <tr th:each="list: ${adverts}">
+          <td th:text="${list.id}"></td>
+          <td th:text="${list.title}"></td>
+          <td th:text="${list.description}"></td>
+          <td>
+            <button class="action-btn action-edit">
+              <i class="material-icons">edit</i>
+            </button>
+            <a class="action-btn action-delete" th:href="@{/advert/delete/{id}(id=${list.id})}">
+              <i class="material-icons">delete</i>
+            </a>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+
+</html>

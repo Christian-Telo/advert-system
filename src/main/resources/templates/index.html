@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>Advert System Management</h1>
+      <nav>
+        <ul>
+          <li><a th:href="@{/index}">Home</a></li>
+          <li><a th:href="@{/about}">About us</a></li>
+          <li><a th:href="@{/}">Login</a></li>
+          <li><a th:href="@{/signup}">Sign up</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container">
+      <h2>Welcome to the Advertisement System Management!</h2>
+      <p>This is where you can manage your ads and track their performance.</p>
+      <!-- Other content of your home page -->
+    </div>
+    <div class="content">
+      <section>
+        <span class="title">Live Concert </span>
+        <span class="description">live concert for dj khaled</span>
+        <img th:src="@{/images/dj.jpg}" alt="">
+      </section>
+      <section>
+        <span class="title">Live Concert </span>
+        <span class="description">live concert for dj khaled</span>
+        <img th:src="@{/images/dj.jpg}" alt="">
+      </section>
+      <section>
+        <span class="title">Live Concert </span>
+        <span class="description">live concert for dj khaled</span>
+        <img th:src="@{/images/dj.jpg}" alt="">
+      </section>
+      <section>
+        <span class="title">Live Concert </span>
+        <span class="description">live concert for dj khaled</span>
+        <img th:src="@{/images/dj.jpg}" alt="">
+      </section>
+      <section>
+        <span class="title">Live Concert </span>
+        <span class="description">live concert for dj khaled</span>
+        <img th:src="@{/images/dj.jpg}" alt="">
+      </section>
+      <section>
+        <span class="title">Live Concert </span>
+        <span class="description">live concert for dj khaled</span>
+        <img th:src="@{/images/dj.jpg}" alt="">
+      </section>
+    </div>
+  </body>
+
+</html>

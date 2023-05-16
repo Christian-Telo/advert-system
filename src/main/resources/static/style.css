@@ -1,0 +1,304 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Style for home page */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 30px;
+  }
+  
+  .header h1 {
+    font-size: 40px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.9;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  nav a:hover {
+    opacity: 1;
+  }
+  
+  .container {
+    margin: 50px auto;
+    width: 80%;
+    text-align: center;
+  }
+  
+  .container h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .container p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+  }
+
+
+/* Style for login and signup form */
+.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    padding: 25px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 2px #ddd;
+    text-align: center;
+  }
+  
+  .form input, .form textarea, .form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #eee;
+    font-size: 16px;
+    resize: none;
+  }
+
+  .form select {
+    color: #797878;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+  }
+  
+  .form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .form input:focus, .form textarea:focus, .form select:focus {
+    outline: none;
+  }
+
+  .form-message {
+    margin-top: 14px;
+    display: block;
+    font-size: 14px;
+    color: #333;
+  }
+
+  .form-message a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+
+  .form-message a:hover {
+    text-decoration: underline;
+  }
+  
+  .form button:hover {
+    background-color: #3e8e41;
+  }
+  
+  .login-page {
+    background-color: #e6e6e6;
+  }
+
+  .login-form {
+    width: 100%;
+  }
+  
+  .signup-page {
+    background-color: #f2f2f2;
+  }
+  
+  /* Style for dashboard page */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 0 10px;
+  }
+  
+  .card {
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .card h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .card p {
+    font-size: 18px;
+  }
+  
+  .container {
+    margin: 50px auto;
+    width: 80%;
+  }
+
+  .about-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .about-subtitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+  }
+
+  .about-subtitle + p, .about-title + p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 60px;
+  }
+
+  .about-intro {
+    margin-bottom: 40px;
+  }
+
+  .main-wrapper {
+    padding: 40px 20px;
+
+  }
+
+  .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9ec7a0;
+    color: #fff;
+    height: 300px;
+    width: 100%;
+  }
+
+  .banner-title {
+    font-size: 48px;
+  }
+
+  .contact-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+  }
+
+  .contact-item {
+    display: inline-block;
+    color: #333;
+    margin-top: 10px;
+  }
+
+  .contact-item a {
+    color: #333;
+  }
+
+  .contact-item:last-child {
+    margin-left: 20px;
+  }
+
+  .advert-list--title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    text-align: center;
+    margin: 40px auto;
+  }
+
+  .advert-table  {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    background-color: transparent;
+    border-collapse: collapse;
+    border: 1px solid #dee2e6;
+}
+
+.advert-table th, .advert-table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.advert-table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.advert-table tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.advert-table tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+/** action buttons **/
+.action-btn {
+    display: inline-block;
+    padding: 0.5px 0.75px;
+    margin-bottom: 0;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    color: #fff;
+}
+
+.action-edit {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.action-delete {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}

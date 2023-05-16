@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Advert System Management</h1>
+      <nav>
+        <ul>
+          <li><a th:href="@{/index}">Home</a></li>
+          <li><a th:href="@{/about}">About us</a></li>
+          <li><a th:href="@{/}">Login</a></li>
+          <li><a th:href="@{/signup}">Sign up</a></li>
+        </ul>
+      </nav>
+    </div>
+    <form class="form" th:action="@{/user/login}" th:object="${user}" method="post">
+      <input type="text" placeholder="Username" th:field="*{username}" name="username" />
+      <input type="password" placeholder="Password" th:field="*{password}" name="password" />
+      <button>Login</button>
+      <p class="form-message">
+        Not registered? <a th:href="@{/signup}">Create an account</a>
+      </p>
+    </form>
+  </body>
+</html>
