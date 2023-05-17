@@ -18,7 +18,7 @@ private JavaMailSender mailSender;
 	public void newAccountEmail(User user) {
 		
         SimpleMailMessage message = new SimpleMailMessage();
-		message.setFrom("yvesndaruhu@gmail.com");
+		message.setFrom("cbyiringiro980@gmail.com");
 		message.setTo(user.getEmail());
 		message.setSubject("New Account");
 		message.setText("Dear "+user.getFirstname()+" "+user.getLastname()+", Your new Account has been created. Please log in to continue");
